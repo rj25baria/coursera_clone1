@@ -1,0 +1,30 @@
+<svg width="800" height="480" viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="ml" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="480" rx="32" fill="url(#ml)"/>
+  <g transform="translate(120,80)" stroke="#BBF7D0" stroke-width="2" fill="none">
+    <circle cx="120" cy="80" r="26"/>
+    <circle cx="260" cy="60" r="20"/>
+    <circle cx="400" cy="90" r="22"/>
+    <circle cx="540" cy="60" r="18"/>
+    <circle cx="200" cy="200" r="18"/>
+    <circle cx="340" cy="220" r="20"/>
+    <circle cx="480" cy="200" r="18"/>
+    <line x1="146" y1="80" x2="240" y2="64"/>
+    <line x1="280" y1="60" x2="378" y2="86"/>
+    <line x1="422" y1="90" x2="522" y2="64"/>
+    <line x1="134" y1="102" x2="190" y2="186"/>
+    <line x1="274" y1="72" x2="326" y2="208"/>
+    <line x1="418" y1="106" x2="470" y2="188"/>
+    <line x1="214" y1="214" x2="320" y2="218"/>
+    <line x1="360" y1="220" x2="462" y2="206"/>
+  </g>
+  <text x="70" y="90" fill="#ECFEFF" font-family="system-ui" font-size="30" font-weight="600">
+    Machine Learning
+  </text>
+</svg>
+

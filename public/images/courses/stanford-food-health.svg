@@ -1,0 +1,15 @@
+<svg width="800" height="480" viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="480" rx="32" fill="#F97316"/>
+  <circle cx="220" cy="220" r="120" fill="#FEF3C7"/>
+  <path d="M220,120 C260,160 260,280 220,320 C180,280 180,160 220,120Z" fill="#22C55E"/>
+  <circle cx="220" cy="190" r="10" fill="#16A34A"/>
+  <circle cx="220" cy="250" r="10" fill="#16A34A"/>
+  <rect x="420" y="130" width="220" height="200" rx="40" fill="#FCD34D"/>
+  <rect x="440" y="160" width="180" height="40" rx="20" fill="#F97316"/>
+  <rect x="440" y="215" width="180" height="14" rx="7" fill="#FB923C"/>
+  <rect x="440" y="240" width="140" height="14" rx="7" fill="#FDBA74"/>
+  <text x="70" y="100" fill="#FFFBEB" font-family="system-ui" font-size="28" font-weight="600">
+    Food &amp; Health
+  </text>
+</svg>
+

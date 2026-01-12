@@ -1,0 +1,15 @@
+<svg width="800" height="480" viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="480" rx="32" fill="#0B1F33"/>
+  <g transform="translate(80,120)" fill="none" stroke="#3DDCFF" stroke-width="5">
+    <rect x="0" y="0" width="180" height="160" rx="16"/>
+    <rect x="220" y="40" width="180" height="180" rx="16"/>
+    <rect x="440" y="0" width="180" height="160" rx="16"/>
+    <path d="M90,160 L90,240" stroke="#8395FF" stroke-linecap="round"/>
+    <path d="M310,220 L310,260" stroke="#8395FF" stroke-linecap="round"/>
+    <path d="M530,160 L530,240" stroke="#8395FF" stroke-linecap="round"/>
+  </g>
+  <text x="60" y="90" fill="#E5ECFF" font-size="32" font-family="system-ui" font-weight="600">
+    IBM Data Science
+  </text>
+</svg>
+

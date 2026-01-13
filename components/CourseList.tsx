@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Search } from 'lucide-react';
 import CourseCard from './CourseCard';
 import { courses } from '@/data/courses';
@@ -8,8 +9,17 @@ import { courses } from '@/data/courses';
 const allTags = ['All', 'Data Science', 'Programming', 'Business', 'Health', 'AI', 'Web Development'];
 
 const CourseList = () => {
+  const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState('All');
+
+  // Handle URL query parameters for tag filtering
+  useEffect(() => {
+    const tagParam = searchParams.get('tag');
+    if (tagParam && allTags.includes(tagParam)) {
+      setSelectedTag(tagParam);
+    }
+  }, [searchParams]);
 
   const filteredCourses = courses.filter((course) => {
     const matchesSearch =
@@ -58,14 +68,18 @@ const CourseList = () => {
 
         {/* Course Grid */}
         {filteredCourses.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {filteredCourses.map((course) => (
               <CourseCard key={course.id} course={course} />
             ))}
           </div>
         ) : (
-          <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">No courses found matching your criteria.</p>
+          <div className="text-center py-8 lg:py-12">
+            <div className="max-w-md mx-auto">
+              <Search className="w-12 h-12 text-gray-300 mx-auto mb-4" />
+              <p className="text-gray-500 text-base lg:text-lg mb-2">No courses found</p>
+              <p className="text-gray-400 text-sm">Try adjusting your search or filter criteria</p>
+            </div>
           </div>
         )}
       </div>

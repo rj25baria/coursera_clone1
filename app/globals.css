@@ -17,3 +17,120 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container { padding: 10px; }
+  button, input { width: 100%; margin-bottom: 10px; }
+  .course-list { display: flex; flex-direction: column; }
+  .profile { text-align: center; }
+}
+.course-card {
+  width: 360px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.provider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.provider-icon {
+  width: 22px;
+  height: 22px;
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 8px 0 4px;
+}
+
+.certificate {
+  color: #555;
+  font-size: 14px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.star {
+  color: #f59e0b;
+}
+
+.reviews {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.level {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.progress-wrapper {
+  margin-top: 12px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2563eb;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 12px;
+  color: #374151;
+  margin-top: 4px;
+  display: block;
+}
+
+.continue-btn {
+  margin-top: 14px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.continue-btn:hover {
+  background: #1e40af;
+}

@@ -87,6 +87,12 @@ export default function CourseDetailClient({ course }: CourseDetailClientProps) 
     }
   };
 
+  const handleVideoLoad = () => {
+    if (videoRef.current && savedTime > 0) {
+      videoRef.current.currentTime = savedTime;
+    }
+  };
+
   const resumeVideo = () => {
     if (videoRef.current) {
       videoRef.current.currentTime = savedTime;
@@ -198,28 +204,31 @@ export default function CourseDetailClient({ course }: CourseDetailClientProps) 
                             />
                         ) : (
                             <>
-                                <video 
+                                <video
                                     ref={videoRef}
-                                    src={course.videoUrl} 
+                                    src={course.videoUrl}
                                     controls
                                     className="w-full h-full"
                                     onTimeUpdate={handleTimeUpdate}
+                                    onLoadedData={handleVideoLoad}
                                 />
                                 {showResumeBtn && (
-                                    <div className="absolute inset-0 bg-black/60 flex items-center justify-center z-10">
-                                        <button 
-                                            onClick={resumeVideo}
-                                            className="bg-blue-600 text-white px-6 py-3 rounded-full font-bold flex items-center hover:bg-blue-700 transition-transform transform hover:scale-105"
-                                        >
-                                            <Play className="w-5 h-5 mr-2" />
-                                            Resume from {Math.floor(savedTime)}s
-                                        </button>
-                                        <button 
-                                            onClick={() => setShowResumeBtn(false)}
-                                            className="absolute top-4 right-4 text-white hover:text-gray-300"
-                                        >
-                                            Dismiss
-                                        </button>
+                                    <div className="absolute inset-0 bg-black/60 flex items-center justify-center z-10 p-4">
+                                        <div className="text-center">
+                                            <button
+                                                onClick={resumeVideo}
+                                                className="bg-blue-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full font-bold flex items-center mx-auto hover:bg-blue-700 transition-transform transform hover:scale-105 text-sm sm:text-base"
+                                            >
+                                                <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                                                Resume from {Math.floor(savedTime)}s
+                                            </button>
+                                            <button
+                                                onClick={() => setShowResumeBtn(false)}
+                                                className="mt-2 text-white hover:text-gray-300 text-sm"
+                                            >
+                                                Dismiss
+                                            </button>
+                                        </div>
                                     </div>
                                 )}
                             </>

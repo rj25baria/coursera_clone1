@@ -15,7 +15,7 @@ export interface Course {
 export const courses: Course[] = [
   {
     id: 'google-data-analytics',
-    image: '/images/courses/google-data-analytics.svg',
+    image: 'https://images.unsplash.com/photo-1581093588401-60f079b56295?auto=format&fit=crop&w=400&q=80',
     partner: 'Google',
     title: 'Google Data Analytics',
     rating: 4.8,
@@ -29,7 +29,8 @@ export const courses: Course[] = [
   },
   {
     id: 'ibm-data-science',
-    image: '/images/courses/ibm-data-science.svg',
+    image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80',
+',
     partner: 'IBM',
     title: 'IBM Data Science',
     rating: 4.6,
@@ -42,7 +43,8 @@ export const courses: Course[] = [
   },
   {
     id: 'python-for-everybody',
-    image: '/images/courses/python-for-everybody.svg',
+    image: 'https://images.unsplash.com/photo-1591696205602-50a7ee38ef17?auto=format&fit=crop&w=400&q=80',
+
     partner: 'University of Michigan',
     title: 'Python for Everybody',
     rating: 4.8,
@@ -55,7 +57,8 @@ export const courses: Course[] = [
   },
   {
     id: 'meta-front-end',
-    image: '/images/courses/meta-front-end.svg',
+    image: 'https://images.unsplash.com/photo-1591696205602-50a7ee38ef17?auto=format&fit=crop&w=400&q=80',
+
     partner: 'Meta',
     title: 'Meta Front-End Developer',
     rating: 4.7,
@@ -68,7 +71,8 @@ export const courses: Course[] = [
   },
   {
     id: 'machine-learning',
-    image: '/images/courses/machine-learning.svg',
+    image: 'https://images.unsplash.com/photo-1517430816045-df4b7de01c06?auto=format&fit=crop&w=400&q=80',
+',
     partner: 'DeepLearning.AI',
     title: 'Machine Learning',
     rating: 4.9,
@@ -81,7 +85,8 @@ export const courses: Course[] = [
   },
   {
     id: 'science-of-well-being',
-    image: '/images/courses/science-of-well-being.svg',
+    image: 'https://images.unsplash.com/photo-1531093800735-376c2349f1ea?auto=format&fit=crop&w=400&q=80',
+
     partner: 'Yale University',
     title: 'The Science of Well-Being',
     rating: 4.9,
@@ -94,7 +99,8 @@ export const courses: Course[] = [
   },
   {
     id: 'google-project-management',
-    image: '/images/courses/google-project-management.svg',
+    image:' https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80',
+
     partner: 'Google',
     title: 'Google Project Management',
     rating: 4.8,
@@ -107,7 +113,8 @@ export const courses: Course[] = [
   },
   {
     id: 'stanford-food-health',
-    image: '/images/courses/stanford-food-health.svg',
+    image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80',
+
     partner: 'Stanford University',
     title: 'Food & Health',
     rating: 4.7,

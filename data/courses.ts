@@ -30,7 +30,7 @@ export const courses: Course[] = [
   {
     id: 'ibm-data-science',
     image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80',
-',
+
     partner: 'IBM',
     title: 'IBM Data Science',
     rating: 4.6,

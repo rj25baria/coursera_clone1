@@ -15,7 +15,7 @@ export interface Course {
 export const courses: Course[] = [
   {
     id: 'google-data-analytics',
-    image: 'https://images.unsplash.com/photo-1581093588401-60f079b56295?auto=format&fit=crop&w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
     partner: 'Google',
     title: 'Google Data Analytics',
     rating: 4.8,
@@ -29,8 +29,7 @@ export const courses: Course[] = [
   },
   {
     id: 'ibm-data-science',
-    image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80',
-
+    image: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=800&q=80',
     partner: 'IBM',
     title: 'IBM Data Science',
     rating: 4.6,
@@ -43,8 +42,7 @@ export const courses: Course[] = [
   },
   {
     id: 'python-for-everybody',
-    image: 'https://images.unsplash.com/photo-1591696205602-50a7ee38ef17?auto=format&fit=crop&w=400&q=80',
-
+    image: 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=80',
     partner: 'University of Michigan',
     title: 'Python for Everybody',
     rating: 4.8,
@@ -57,8 +55,7 @@ export const courses: Course[] = [
   },
   {
     id: 'meta-front-end',
-    image: 'https://images.unsplash.com/photo-1591696205602-50a7ee38ef17?auto=format&fit=crop&w=400&q=80',
-
+    image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=800&q=80',
     partner: 'Meta',
     title: 'Meta Front-End Developer',
     rating: 4.7,
@@ -71,8 +68,7 @@ export const courses: Course[] = [
   },
   {
     id: 'machine-learning',
-    image: 'https://images.unsplash.com/photo-1517430816045-df4b7de01c06?auto=format&fit=crop&w=400&q=80',
-',
+    image: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=800&q=80',
     partner: 'DeepLearning.AI',
     title: 'Machine Learning',
     rating: 4.9,
@@ -85,8 +81,7 @@ export const courses: Course[] = [
   },
   {
     id: 'science-of-well-being',
-    image: 'https://images.unsplash.com/photo-1531093800735-376c2349f1ea?auto=format&fit=crop&w=400&q=80',
-
+    image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80',
     partner: 'Yale University',
     title: 'The Science of Well-Being',
     rating: 4.9,
@@ -99,8 +94,7 @@ export const courses: Course[] = [
   },
   {
     id: 'google-project-management',
-    image:' https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80',
-
+    image:  'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80',
     partner: 'Google',
     title: 'Google Project Management',
     rating: 4.8,
@@ -113,8 +107,7 @@ export const courses: Course[] = [
   },
   {
     id: 'stanford-food-health',
-    image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80',
-
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80',
     partner: 'Stanford University',
     title: 'Food & Health',
     rating: 4.7,
